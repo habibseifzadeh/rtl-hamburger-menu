@@ -1,0 +1,90 @@
+/* Created by Habib Seifzadeh - 2020 */
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.9);
+  --speed: 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, p, h2 {
+  margin-bottom: 15px;
+}
+
+/*Utilities*/
+
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+.container {
+  max-width: 1100px;
+  padding: 20px;
+  margin: auto;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin: 2.5rem 0;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: rgb(13, 110, 139);
+  color: #fff;
+  transition: background var(--speed);
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color);
+}
+
+#showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+#showcase:before {
+  content: '';
+  background: url("https://source.unsplash.com/weekly?water") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
