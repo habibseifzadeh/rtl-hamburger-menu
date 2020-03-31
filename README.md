@@ -1,6 +1,6 @@
 # A Right-to-left Hamburger Menu
 
-There has not been a decent right-to-left hamburger menu out there. So, I decided to create one by my own. The following code is created by only Html and Css and there is no Javascript code included. 
+To my knowledged, there has not been a decent right-to-left hamburger menu out there. So, I decided to create one by my own. The following code is created by only Html and Css and there is no Javascript code included. 
 
 I have also made it responsive so that it takes 20%, 30% and 50% of the screen in widescreen, normal, and smartphone displays, respectively. 
 
